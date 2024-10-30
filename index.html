@@ -9,9 +9,6 @@
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
-<script>
-  $('img[usemap]').imageMapResize();
-</script>
     <script>
     function looper(){
     for(count = 0; count < 25; count ++ ) { 
@@ -171,7 +168,7 @@
           >
         </p>
       </div>
-      <h2 id="othernotableevents" class="text-danger">Other Events</h2>
+      <h2 id="othernota+bleevents" class="text-danger">Other Events</h2>
       <p class="fs-3">
         <b>
           In 1810, local settlers overthrew the Spanish and declared the area
@@ -199,7 +196,20 @@
         <li>Best food in the World</li>
       </ul>
       <div class="card p-3 border">
-      <img usemap="#my-image-map"       class="card-img-top" 
+      <img usemap="#my-image-map"      class="card-image-top"
+        src="myimagemap.jpg" >
+        <map name="my-image-map">
+          <area coords="16, 81, 103, 65, 191, 71, 11, 397, 80, 413, 126, 419, 211, 412" shape="poly" href="https://www.foodnetwork.com/how-to/packages/food-network-essentials/how-to-eat-crawfish" alt="CRAWFISH"/>
+        <area coords="252, 65, 293, 52, 386, 34, 448, 54, 475, 63, 461, 209, 381, 215, 306, 215, 265, 208" shape="poly" href="https://www.allrecipes.com/recipe/31848/jambalaya/" alt="jambalaya"/>
+        <area coords="538, 38, 556, 21, 615, 9, 736, 37, 518, 137, 527, 171, 552, 212" shape="poly" href="https://www.bowlofdelicious.com/easy-classic-shrimp-and-grits/" alt="shrimp and grits"/>
+        <area coords="266, 244, 345, 247, 447, 248, 486, 271, 479, 344, 457, 400, 422, 427" shape="poly" href="https://www.allrecipes.com/recipe/58211/authentic-louisiana-red-beans-and-rice/" alt="red beans and rice"/>
+        <area coords="524, 248, 591, 236, 686, 243, 737, 307, 635, 427, 539, 420, 509, 361" shape="poly" href="https://www.allrecipes.com/recipe/216888/good-new-orleans-creole-gumbo/" alt="shrimp gumbo"/>
+        </map>
+      </div>
+      <script>
+        imageMapResize();
+      </script>
+      <!-- <img usemap="#my-image-map"
         src="myimagemap.jpg" >
         <map name="my-image-map">
           <area coords="1, 1, 235, 430" shape="rect" href="https://www.foodnetwork.com/how-to/packages/food-network-essentials/how-to-eat-crawfish" alt="CRAWFISH"/>
@@ -208,7 +218,9 @@
         <area coords="257, 245, 476, 419" shape="rect" href="https://www.allrecipes.com/recipe/58211/authentic-louisiana-red-beans-and-rice/" alt="red beans and rice"/>
         <area coords="515, 248, 733, 424" shape="rect" href="https://www.allrecipes.com/recipe/216888/good-new-orleans-creole-gumbo/" alt="shrimp gumbo"/>
         </map>
-      </div>
+        <script>
+          imageMapResize();
+        </script> -->
       </main>
   </body>
   <hr />
