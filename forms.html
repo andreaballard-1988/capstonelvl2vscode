@@ -1,0 +1,88 @@
+<head>
+<title>form inputs</title>
+<script> src="utility-functions.js" </script>
+</head>
+<body>
+<h1> form inputs</h1>
+<hr />
+<h2>inputs</h2>
+<h3>buttons</h3>
+<pre>
+    <button type="button">click button</button>
+    <input type="button" value="click button">
+    <input type="button" value="add submission">
+    <input type="reset" value="reset form">
+    <input type="radio" /> radio button
+    <input type="checkbox" /> checkbox
+</pre>
+<h3>text inputs</h3>
+<pre>
+<input tyoe="text" placeholder="text input">
+<input type="email" placeholder="email input">
+<input type="tel" placeholder="phone number input">
+<input type="number" placeholder="number input">
+<input type="password" placeholder="password input">
+<input type="search" placeholder="search input">
+<input type="url" placeholder="url input">
+</pre>
+
+<h3>interface</h3>
+<pre>
+    <input type="file">
+    <input type="color"> color picker
+    <input type="time">
+    <input type="week">
+    <input type="month"> month picker
+    <input type="date">
+    <input type="datetime-local">
+    <input type="number" min="10" max="30">
+    <input range="range" min="10" max="30"> number
+    <select>
+        <option>item 1</option>
+        <option>item 2</option>
+        <option>item 3</option>
+        <option selected>dropdown</option>
+    </select>
+</pre>
+<hr />
+
+<h2>forms</h2>
+<h3>validation</h3>
+<pre>
+    forms can validate their input
+    inputs are checked before submitted
+    typr invalid values to see form validation
+</pre>
+<form>    
+    <input type="email" placeholder="email input">
+    <input type="submit" />
+</form>
+
+<form>
+    <input required type="password" placeholder="password input">
+    <button type="submit">submit</button>
+</form>
+
+<form>
+    <input
+        type="text"
+        placeholder="input length"
+        minlength="s"
+        maxlength="10"
+    />
+    <input type="submit" />
+</form>
+<form>
+    <input
+        type="tel"
+        placeholder="phone number input"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+    />
+    <input type="submit" />
+    ###-###-####
+</form>
+
+<button onclick="display('hello world')">click here</button>
+
+
+</body>
