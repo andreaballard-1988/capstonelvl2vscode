@@ -54,12 +54,12 @@
     typr invalid values to see form validation
 </pre>
 <form>    
-    <input type="email" placeholder="email input">
+    <input type="email" placeholder="email input"/>
     <input type="submit" />
 </form>
 
 <form>
-    <input required type="password" placeholder="password input">
+    <input required type="password" placeholder="password input"/>
     <button type="submit">submit</button>
 </form>
 
@@ -81,8 +81,33 @@
     <input type="submit" />
     ###-###-####
 </form>
+<div id="outputtag"> </div>
+<button onclick="output('hello world')">click here</button>
 
-<button onclick="display('hello world')">click here</button>
+<script>
+    const car1 = {};
+    car1.color = "red";
+    car1.year = 2024;
+
+    const car2 = {};
+    car2.color = "green";
+    car2.year = 2020;
+
+    const car3 = {};
+    car3.color = "white";
+    car3.year = 2022;
+
+    debugger;
+
+    output(`the color is ${car.color}`);
+    output(`the year is ${car.year}`);
+    debugger;
+
+    const cars = ["car1", "car2", "car3"];
+
+    output(`Position 0 is ${cars[0]}.<br>`);
+    output(`Position 2 is ${cars[2]}.<br>`);
 
 
+</script>
 </body>
